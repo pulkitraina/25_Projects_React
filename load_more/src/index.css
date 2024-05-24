@@ -1,0 +1,119 @@
+.large-container.load-more{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.error{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  font-size: 3rem;
+  background-color: #747bff;
+  text-shadow: 2px 2px whitesmoke;
+}
+
+.error.loader{
+  position: fixed;
+  background: rgba(0, 0, 0, 0.834)
+      url("https://media.giphy.com/media/8agqybiK5LW8qrG3vJ/giphy.gif") center
+      no-repeat;
+  z-index: 1;
+}
+
+.product-card{
+  width: calc(30% - 50px);
+  min-width: min-content;
+  min-height: fit-content;
+  padding: 15px;
+  background-color: rgba(164, 170, 175, 0.457);
+  border-radius: 10px;
+  box-shadow: 3px 3px black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.product-card .title{
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 600;
+}
+
+.product-card img{
+  width: 80%;
+  max-height: 300px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 2px 2px black;
+}
+
+.product-card .desc{
+  font-size: 1rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.price-rating{
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-weight: bolder;
+  font-size: 1.5rem;
+}
+
+.stars{
+  display: flex;
+  flex: 1;
+  justify-content: end;
+}
+
+button.load-more-btn{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 1.25rem;
+
+  cursor: pointer;
+  padding: 15px 10px;
+  border-radius: 15px;
+  outline: none;
+  border: none;
+  background-color: slategray;
+
+  flex: 1;
+}
+
+button.load-more-btn:hover{
+  transform: scale(0.9);
+  transition: 0.2s ease-in-out;
+}
+
+button.load-more-btn:active{
+  transform: scale(0.85);
+  transition: 0.1s ease-in-out;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

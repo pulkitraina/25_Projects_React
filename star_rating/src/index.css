@@ -1,0 +1,21 @@
+.star-container{
+  width: 100%;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}

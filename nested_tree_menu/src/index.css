@@ -1,0 +1,58 @@
+.menu-container{
+  padding: 3rem 2rem 0 3rem;
+  width: 40%;
+  height: 100vh;
+  background-color: #19209b;
+  color: whitesmoke;
+  left: 0;
+
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5rem;
+}
+
+ul.ul-tree {
+  padding: 0;
+}
+
+.menu-item{
+  display: flex;
+  gap: 10px;
+  
+  align-items: center;
+}
+
+.menu-container li{
+  padding-left: 20px;
+  list-style-type: none;
+
+  margin: 10px;
+}
+
+.plus-minus{
+  font-size: 1.5rem;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.plus-minus:hover{
+  transform: scale(0.9);
+  transition: 0.2s ease-in;
+}
+
+.plus-minus:active{
+  transform: scale(0.85);
+  transition: 0.2s ease-out;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
